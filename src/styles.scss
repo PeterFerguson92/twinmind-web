@@ -6,8 +6,8 @@ Default CSS
 :root {
     --mainFontFamily: 'Open Sans', sans-serif;
     --optionalFontFamily: 'Dosis', sans-serif;
-    --mainColor: #4ac728;
-    --gradientColor: linear-gradient(to right, #49c628, #53d23c, #5ddd4e, #66e95f, #70f570);
+    --mainColor: #0f4bb9;
+    --gradientColor: linear-gradient(to right, #0f4bb9, #0f4bb9, #0f4bb9, #0f4bb9, #0f4bb9);
     --optionalColor: #FC4A1A;
     --optionalGradientColor: linear-gradient(to right, #fc4a1a, #fd6b12, #fc8712, #faa01f, #f7b733);
     --whiteColor: #ffffff;
@@ -5834,7 +5834,7 @@ Navbar Area CSS
                 .nav-item {
                     a {
                         color: var(--blackColor);
-                        
+
                         &:hover, &:focus, &.active {
                             color: var(--mainColor);
                         }
@@ -5847,9 +5847,9 @@ Navbar Area CSS
                     .dropdown-menu {
                         li {
                             a {
-                                
+
                                 color: var(--blackColor);
-                                
+
                                 &:hover, &:focus, &.active {
                                     color: var(--mainColor);
                                 }
@@ -5858,17 +5858,17 @@ Navbar Area CSS
                                 li {
                                     a {
                                         color: var(--blackColor);
-                                        
+
                                         &:hover, &:focus, &.active {
                                             color: var(--mainColor);
                                         }
                                     }
                                     .dropdown-menu {
-                                        
+
                                         li {
                                             a {
                                                 color: var(--blackColor);
-            
+
                                                 &:hover, &:focus, &.active {
                                                     color: var(--mainColor);
                                                 }
@@ -5877,7 +5877,7 @@ Navbar Area CSS
                                                 li {
                                                     a {
                                                         color: var(--blackColor);
-                    
+
                                                         &:hover, &:focus, &.active {
                                                             color: var(--mainColor);
                                                         }
@@ -5886,7 +5886,7 @@ Navbar Area CSS
                                                         li {
                                                             a {
                                                                 color: var(--blackColor);
-                            
+
                                                                 &:hover, &:focus, &.active {
                                                                     color: var(--mainColor);
                                                                 }
@@ -5895,7 +5895,7 @@ Navbar Area CSS
                                                                 li {
                                                                     a {
                                                                         color: var(--blackColor);
-                                    
+
                                                                         &:hover, &:focus, &.active {
                                                                             color: var(--mainColor);
                                                                         }
@@ -5904,7 +5904,7 @@ Navbar Area CSS
                                                                         li {
                                                                             a {
                                                                                 color: var(--blackColor);
-                                            
+
                                                                                 &:hover, &:focus, &.active {
                                                                                     color: var(--mainColor);
                                                                                 }
@@ -5955,7 +5955,7 @@ Navbar Area CSS
                     }
                 }
             }
-            .others-options {        
+            .others-options {
                 .cart-btn {
                     color: var(--blackColor);
 
@@ -6552,7 +6552,7 @@ Projects Wrap Area CSS
     margin-bottom: 30px;
     transition: var(--transition);
     background-color: var(--whiteColor);
-    
+
     a {
         img {
             transition: var(--transition);
@@ -6800,7 +6800,7 @@ Subscribe Wrap Area CSS
         .form-control {
             background-color: #239596;
             color: var(--whiteColor);
-    
+
             &::placeholder {
                 color: var(--whiteColor);
             }
@@ -6840,7 +6840,7 @@ Blog Wrap Area CSS
 	background-position: center center;
     background-repeat: no-repeat;
     transition: var(--transition);
-    
+
     &::before {
         content: '';
         position: absolute;
@@ -6944,7 +6944,7 @@ Blog Wrap Area CSS
                 ul {
                     li {
                         color: var(--eggBlueColor);
-    
+
                         &::before {
                             background: var(--eggBlueColor);
                         }
@@ -6981,7 +6981,7 @@ Blog Wrap Area CSS
                 ul {
                     li {
                         color: var(--eggBlueColor);
-    
+
                         &::before {
                             background: var(--eggBlueColor);
                         }
@@ -7041,7 +7041,7 @@ Footer Area CSS
                     a {
                         background-color: var(--blackColor);
                         color: var(--whiteColor);
-                        
+
                         &:hover {
                             background-color: var(--eggBlueColor);
                             color: var(--whiteColor);
@@ -7216,7 +7216,7 @@ Video Wrap Area CSS
         border-radius: 50%;
         color: var(--whiteColor);
         z-index: 1;
-    
+
         i {
             &::before {
                 font-size: 38px;
