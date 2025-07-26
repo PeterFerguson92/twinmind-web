@@ -8,9 +8,14 @@ import { CommonService } from "src/app/shared/common.service";
 })
 export class HomeTwoComponent implements OnInit {
     services: any[] = [];
+    whyChooseUsInformation: any;
+    recentProjects: any[] = [];
     constructor(private commonService: CommonService) {}
 
     ngOnInit(): void {
         this.services = this.commonService.getAllServices();
+        this.whyChooseUsInformation =
+            this.commonService.getWhyChooseUsInformation();
+        this.recentProjects = this.commonService.getRecentProjects();
     }
 }

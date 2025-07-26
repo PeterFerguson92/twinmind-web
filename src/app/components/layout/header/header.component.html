@@ -91,33 +91,15 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a
-                                href="javascript:void(0)"
                                 class="nav-link dropdown-toggle"
                                 data-bs-toggle="dropdown"
+                                routerLink="/projects"
+                                (click)="closeNavbar(navbarCollapse)"
                             >
-                                Projects <i class="fas fa-chevron-down"></i>
+                                Projects
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/projects"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Projects</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/project-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Projects Details</a
-                                    >
-                                </li>
-                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a
                                 routerLink="/faq"
@@ -127,35 +109,6 @@
                                 >FAQ</a
                             >
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                Blog <i class="fas fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/blog"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Blog</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/blog-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Blog Details</a
-                                    >
-                                </li>
-                            </ul>
-                        </li> -->
 
                         <li class="nav-item">
                             <a
