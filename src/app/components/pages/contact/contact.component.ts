@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { FormBuilder, Validators } from "@angular/forms";
 import { Subject } from "rxjs";
 import { EmailService } from "src/app/shared/email.service";
@@ -9,6 +9,7 @@ import { EmailService } from "src/app/shared/email.service";
     styleUrls: ["./contact.component.scss"],
 })
 export class ContactComponent implements OnInit {
+    @Input() showHeader: boolean = true;
     infoText: string | null = "";
     errorText!: string | null;
     showInfoText!: boolean;

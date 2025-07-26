@@ -11,18 +11,42 @@
         </div>
     </div>
 
-    <div class="dot-shape1"><img src="assets/img/shape/dot1.png" alt="image"></div>
-    <div class="dot-shape2"><img src="assets/img/shape/dot2.png" alt="image"></div>
-    <div class="dot-shape3"><img src="assets/img/shape/dot3.png" alt="image"></div>
-    <div class="dot-shape4"><img src="assets/img/shape/dot4.png" alt="image"></div>
-    <div class="dot-shape5"><img src="assets/img/shape/dot5.png" alt="image"></div>
-    <div class="dot-shape6"><img src="assets/img/shape/dot6.png" alt="image"></div>
-    <div class="dot-shape7"><img src="assets/img/shape/dot1.png" alt="image"></div>
-    <div class="shape16"><img src="assets/img/shape/shape13.svg" alt="image"></div>
-    <div class="shape17"><img src="assets/img/shape/shape14.svg" alt="image"></div>
-    <div class="shape18"><img src="assets/img/shape/shape15.png" alt="image"></div>
-    <div class="shape19"><img src="assets/img/shape/shape16.png" alt="image"></div>
-    <div class="shape20"><img src="assets/img/shape/shape14.svg" alt="image"></div>
+    <div class="dot-shape1">
+        <img src="assets/img/shape/dot1.png" alt="image" />
+    </div>
+    <div class="dot-shape2">
+        <img src="assets/img/shape/dot2.png" alt="image" />
+    </div>
+    <div class="dot-shape3">
+        <img src="assets/img/shape/dot3.png" alt="image" />
+    </div>
+    <div class="dot-shape4">
+        <img src="assets/img/shape/dot4.png" alt="image" />
+    </div>
+    <div class="dot-shape5">
+        <img src="assets/img/shape/dot5.png" alt="image" />
+    </div>
+    <div class="dot-shape6">
+        <img src="assets/img/shape/dot6.png" alt="image" />
+    </div>
+    <div class="dot-shape7">
+        <img src="assets/img/shape/dot1.png" alt="image" />
+    </div>
+    <div class="shape16">
+        <img src="assets/img/shape/shape13.svg" alt="image" />
+    </div>
+    <div class="shape17">
+        <img src="assets/img/shape/shape14.svg" alt="image" />
+    </div>
+    <div class="shape18">
+        <img src="assets/img/shape/shape15.png" alt="image" />
+    </div>
+    <div class="shape19">
+        <img src="assets/img/shape/shape16.png" alt="image" />
+    </div>
+    <div class="shape20">
+        <img src="assets/img/shape/shape14.svg" alt="image" />
+    </div>
 </div>
 <!-- End Page Title Area -->
 
@@ -36,12 +60,17 @@
                         <div class="content">
                             <span>We got you covered</span>
                             <h2>Got questions? We’ve got answers.</h2>
-                            <p>Whether you're curious about how we work, what we offer, or just need some clarity, our FAQ section covers the essentials. If your question isn’t listed here, we’re just a message away.</p>
+                            <p>
+                                Whether you're curious about how we work, what
+                                we offer, or just need some clarity, our FAQ
+                                section covers the essentials. If your question
+                                isn’t listed here, we’re just a message away.
+                            </p>
                         </div>
                     </div>
 
                     <div class="faq-image">
-                        <img src="assets/img/faq.png" alt="image">
+                        <img src="assets/img/faq.png" alt="image" />
                     </div>
                 </div>
             </div>
@@ -50,7 +79,10 @@
                 <div class="faq-accordion">
                     <ul class="accordion">
                         <li class="accordion-item" *ngFor="let faq of faqs">
-                            <a class="accordion-title" href="javascript:void(0)">
+                            <a
+                                class="accordion-title"
+                                href="javascript:void(0)"
+                            >
                                 <i class="fas fa-plus"></i>
                                 {{ faq.question }}
                             </a>
@@ -60,55 +92,7 @@
                 </div>
             </div>
         </div>
-
-        <div class="faq-contact">
-            <div class="section-title">
-                <div class="content">
-                    <span>Message Us</span>
-                    <h2>Do You Have Any Questions</h2>
-                </div>
-            </div>
-<!--
-            <div class="faq-contact-form">
-                <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-3">
-                                <input type="text" name="name" [(ngModel)]="form.name" class="form-control" placeholder="Name" required>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-3">
-                                <input type="email" name="email" [(ngModel)]="form.email" class="form-control" placeholder="Email" required>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-3">
-                                <input type="text" name="phone" [(ngModel)]="form.phone" class="form-control" placeholder="Phone">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6">
-                            <div class="form-group mb-3">
-                                <input type="text" name="subject" [(ngModel)]="form.subject" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <div class="form-group mb-3">
-                                <textarea name="message" [(ngModel)]="form.message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12">
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div> -->
-        </div>
+        <app-contact [showHeader]="false"></app-contact>
     </div>
 </section>
 <!-- End FAQ Area -->
