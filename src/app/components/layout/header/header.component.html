@@ -1,248 +1,117 @@
 <!-- Start Navbar Area -->
 <div
-    class="navbar-area"
-    [ngClass]="{
-        'bg-white': router?.url === '/index-2' || router?.url === '/index-4'
-    }"
+  class="navbar-area"
+  [ngClass]="{
+    'bg-white': router?.url === '/index-2' || router?.url === '/index-4'
+  }"
 >
-    <div
-        class="{{
-            location == '/' ? 'crimo-nav' : 'crimo-nav navbar-style-two'
-        }}"
-    >
-        <div class="{{ location == '/' ? 'container-fluid' : 'container' }}">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/black-logo21.png" alt="logo" />
-                </a>
+  <div class="{{ location == '/' ? 'crimo-nav' : 'crimo-nav navbar-style-two' }}">
+    <div class="{{ location == '/' ? 'container-fluid' : 'container' }}">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <!-- Logo and Toggler Wrapper -->
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <!-- Logo -->
+          <a class="navbar-brand" routerLink="/">
+            <img src="assets/img/black-logo21.png" alt="logo" />
+          </a>
 
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div
-                    class="collapse navbar-collapse mean-menu"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                Home <i class="fas fa-chevron-down"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >IT Startups</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/index-2"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >IT Company</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/index-3"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >IT Services</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/index-4"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >IT Solutions</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                About Us <i class="fas fa-chevron-down"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/about"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Behind the Vision</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/faq"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >FAQ</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                Projects <i class="fas fa-chevron-down"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/projects"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Projects</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/project-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Projects Details</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                Services <i class="fas fa-chevron-down"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/services"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Services</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/service-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Services Details</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a
-                                href="javascript:void(0)"
-                                class="nav-link dropdown-toggle"
-                                data-bs-toggle="dropdown"
-                            >
-                                Blog <i class="fas fa-chevron-down"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/blog"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Blog</a
-                                    >
-                                </li>
-
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/blog-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        >Blog Details</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a
-                                routerLink="/contact"
-                                routerLinkActive="active"
-                                class="nav-link"
-                                >Contact</a
-                            >
-                        </li>
-                    </ul>
-
-                    <div class="others-options">
-                        <div class="option-item">
-                            <i class="search-btn flaticon-search"></i>
-                            <i class="close-btn fas fa-times"></i>
-
-                            <div class="search-overlay search-popup">
-                                <div class="search-box">
-                                    <form class="search-form">
-                                        <input
-                                            class="search-input"
-                                            name="search"
-                                            placeholder="Search"
-                                            type="text"
-                                        />
-                                        <button
-                                            class="search-button"
-                                            type="submit"
-                                        >
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a routerLink="contact" class="btn btn-primary"
-                            >Free Quote</a
-                        >
-                    </div>
-                </div>
-            </nav>
+          <!-- Mobile Menu Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Home <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/" routerLinkActive="active" class="nav-link">IT Startups</a></li>
+                <li class="nav-item"><a routerLink="/index-2" routerLinkActive="active" class="nav-link">IT Company</a></li>
+                <li class="nav-item"><a routerLink="/index-3" routerLinkActive="active" class="nav-link">IT Services</a></li>
+                <li class="nav-item"><a routerLink="/index-4" routerLinkActive="active" class="nav-link">IT Solutions</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                About Us <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/about" routerLinkActive="active" class="nav-link">Behind the Vision</a></li>
+                <li class="nav-item"><a routerLink="/faq" routerLinkActive="active" class="nav-link">FAQ</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Projects <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/projects" routerLinkActive="active" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a routerLink="/project-details" routerLinkActive="active" class="nav-link">Projects Details</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Services <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/services" routerLinkActive="active" class="nav-link">Services</a></li>
+                <li class="nav-item"><a routerLink="/service-details" routerLinkActive="active" class="nav-link">Services Details</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Blog <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a routerLink="/blog" routerLinkActive="active" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a routerLink="/blog-details" routerLinkActive="active" class="nav-link">Blog Details</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right-side Options -->
+          <div class="others-options">
+            <div class="option-item">
+              <i class="search-btn flaticon-search"></i>
+              <i class="close-btn fas fa-times"></i>
+
+              <div class="search-overlay search-popup">
+                <div class="search-box">
+                  <form class="search-form">
+                    <input class="search-input" name="search" placeholder="Search" type="text" />
+                    <button class="search-button" type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <a routerLink="contact" class="btn btn-primary">Free Quote</a>
+          </div>
+        </div>
+      </nav>
     </div>
+  </div>
 </div>
 <!-- End Navbar Area -->
