@@ -32,3 +32,11 @@
     margin-right: 0 !important;
   }
 }
+
+.navbar-toggler {
+  margin-right: 8px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+}
