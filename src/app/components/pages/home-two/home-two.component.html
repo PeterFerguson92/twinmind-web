@@ -327,7 +327,7 @@
                         <p>
                             <strong>{{ service.short }}</strong>
                         </p>
-                        <a href="#" class="read-more-btn">
+                        <a a [routerLink]="['/service-details', service.id]" class="read-more-btn">
                             Read More <i class="flaticon-add-1"></i>
                         </a>
                     </div>

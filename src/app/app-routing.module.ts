@@ -25,7 +25,7 @@ const routes: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'team', component: TeamComponent },
     { path: 'services', component: ServicesComponent },
-    { path: 'service-details', component: ServiceDetailsComponent },
+    { path: 'service-details/:code', component: ServiceDetailsComponent },
     { path: 'projects', component: ProjectsComponent },
     { path: 'project-details', component: ProjectDetailsComponent },
     { path: 'coming-soon', component: ComingSoonComponent },
