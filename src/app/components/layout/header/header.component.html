@@ -2,7 +2,7 @@
 <div
   class="navbar-area"
   [ngClass]="{
-    'bg-white': router?.url === '/index-2' || router?.url === '/index-4'
+    'bg-white': router?.url === '/index-2' || router?.url === '/index-4'|| router?.url === '/'
   }"
 >
   <div class="{{ location == '/' ? 'crimo-nav' : 'crimo-nav navbar-style-two' }}">
@@ -33,15 +33,9 @@
         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Home <i class="fas fa-chevron-down"></i>
+              <a routerLink="/" routerLinkActive="active" class="nav-link" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Home
               </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item"><a routerLink="/" routerLinkActive="active" class="nav-link">IT Startups</a></li>
-                <li class="nav-item"><a routerLink="/index-2" routerLinkActive="active" class="nav-link">IT Company</a></li>
-                <li class="nav-item"><a routerLink="/index-3" routerLinkActive="active" class="nav-link">IT Services</a></li>
-                <li class="nav-item"><a routerLink="/index-4" routerLinkActive="active" class="nav-link">IT Solutions</a></li>
-              </ul>
             </li>
 
             <li class="nav-item dropdown">

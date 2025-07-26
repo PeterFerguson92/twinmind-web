@@ -18,7 +18,7 @@ import { HomeThreeComponent } from './components/pages/home-three/home-three.com
 import { HomeFourComponent } from './components/pages/home-four/home-four.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
+    { path: '', component: HomeTwoComponent },
     { path: 'index-2', component: HomeTwoComponent },
     { path: 'index-3', component: HomeThreeComponent },
     { path: 'index-4', component: HomeFourComponent },
