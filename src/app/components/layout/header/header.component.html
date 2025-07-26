@@ -70,36 +70,17 @@
 
                         <li class="nav-item dropdown">
                             <a
-                                href="javascript:void(0)"
                                 class="nav-link dropdown-toggle"
                                 data-bs-toggle="dropdown"
+                                routerLink="/about"
+                                (click)="closeNavbar(navbarCollapse)"
                             >
-                                About Us <i class="fas fa-chevron-down"></i>
+                                About Us
                             </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/about"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Behind the Vision</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/faq"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >FAQ</a
-                                    >
-                                </li>
-                            </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a
-                                href="javascript:void(0)"
                                 class="nav-link dropdown-toggle"
                                 routerLink="/services"
                                 (click)="closeNavbar(navbarCollapse)"
@@ -107,26 +88,6 @@
                             >
                                 Services
                             </a>
-                            <!-- <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/services"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Services</a
-                                    >
-                                </li>
-                                <li class="nav-item">
-                                    <a
-                                        routerLink="/service-details"
-                                        routerLinkActive="active"
-                                        class="nav-link"
-                                        (click)="closeNavbar(navbarCollapse)"
-                                        >Services Details</a
-                                    >
-                                </li>
-                            </ul> -->
                         </li>
                         <li class="nav-item dropdown">
                             <a
@@ -157,8 +118,16 @@
                                 </li>
                             </ul>
                         </li>
-
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
+                            <a
+                                routerLink="/faq"
+                                routerLinkActive="active"
+                                class="nav-link"
+                                (click)="closeNavbar(navbarCollapse)"
+                                >FAQ</a
+                            >
+                        </li>
+                        <!-- <li class="nav-item dropdown">
                             <a
                                 href="javascript:void(0)"
                                 class="nav-link dropdown-toggle"
@@ -186,7 +155,7 @@
                                     >
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a
@@ -201,30 +170,6 @@
 
                     <!-- Right-side Options -->
                     <div class="others-options">
-                        <div class="option-item">
-                            <i class="search-btn flaticon-search"></i>
-                            <i class="close-btn fas fa-times"></i>
-
-                            <div class="search-overlay search-popup">
-                                <div class="search-box">
-                                    <form class="search-form">
-                                        <input
-                                            class="search-input"
-                                            name="search"
-                                            placeholder="Search"
-                                            type="text"
-                                        />
-                                        <button
-                                            class="search-button"
-                                            type="submit"
-                                        >
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
                         <a
                             routerLink="contact"
                             class="btn btn-primary"
