@@ -10,12 +10,10 @@
                     by leveraging modern technology.
                 </p>
                 <div class="btn-box">
-                   <a routerLink="/about" class="btn btn-primary"
-                                    >Read More</a
-                                >
-                                <a routerLink="/contact" class="btn btn-light"
-                                    >Get Started</a
-                                >
+                    <a routerLink="/about" class="btn btn-primary">Read More</a>
+                    <a routerLink="/contact" class="btn btn-light"
+                        >Get Started</a
+                    >
                 </div>
             </div>
         </div>
@@ -49,33 +47,28 @@
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="single-boxes-box">
                     <div class="icon">
-                        <i class="flaticon-branch"></i>
+                        <i class="flaticon-programming-code"></i>
                     </div>
-                    <h3><a href="#">IT Management</a></h3>
+                    <h3>Software Development</h3>
                     <p>
-                        From strategy to execution, our team delivers the tech
-                        that drives real business results.
+                        From responsive websites to feature-rich mobile
+                        applications, we specialize in building custom digital
+                        solutions that are fast, secure, and scalable.
                     </p>
-                    <a href="#" class="read-more-btn"
-                        >Read More <i class="flaticon-add-1"></i
-                    ></a>
                 </div>
             </div>
 
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="single-boxes-box">
                     <div class="icon">
-                        <i class="flaticon-programming-code"></i>
+                        <i class="flaticon-writing"></i>
                     </div>
-                    <h3><a href="#">Development</a></h3>
+                    <h3>UI/UX Design & Branding</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna.
+                        Our UI/UX design process focuses on usability, clarity,
+                        and visual appeal. We craft clean, user-centered
+                        interfaces for websites and apps.
                     </p>
-                    <a href="#" class="read-more-btn"
-                        >Read More <i class="flaticon-add-1"></i
-                    ></a>
                 </div>
             </div>
 
@@ -84,17 +77,14 @@
             >
                 <div class="single-boxes-box">
                     <div class="icon">
-                        <i class="flaticon-tools-and-utensils"></i>
+                        <i class="flaticon-analysis"></i>
                     </div>
-                    <h3><a href="#">UX/UI Design</a></h3>
+                    <h3>Digital Product Strategy</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna.
+                        Success starts with the right strategy. Whether you're
+                        building an MVP or scaling an existing product, we
+                        partner with you to define your roadmap.
                     </p>
-                    <a href="#" class="read-more-btn"
-                        >Read More <i class="flaticon-add-1"></i
-                    ></a>
                 </div>
             </div>
         </div>
@@ -115,15 +105,19 @@
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
                     <div class="content">
-                        <span>About Us</span>
-                        <h2>We've Been Thriving in 37 Years The Tech Area</h2>
+                        <span>Who We Are </span>
+                        <h2>Building Digital Experiences That Drive Results</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Quis suspendisse ultrices
-                            gravida. Risus commodo viverra.
+                            We’re a team of developers, designers, and
+                            strategists dedicated to crafting high-performance
+                            websites and mobile apps. From idea to execution, we
+                            deliver custom digital solutions that are fast,
+                            scalable, and user-focused — helping businesses grow
+                            in a connected world.
                         </p>
-                        <a href="#" class="btn btn-primary">View More</a>
+                        <a routerLink="/about" class="btn btn-primary"
+                            >Read More</a
+                        >
                     </div>
                 </div>
             </div>
@@ -138,20 +132,21 @@
         <div class="section-title-style-two">
             <div class="content">
                 <span>Our Services</span>
-                <h2>We Offer Professional IT Solutions For Business</h2>
+                <h2>Digital Solutions That Power Your Growth</h2>
             </div>
 
             <div class="text">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis suspendisse ultrices gravida. Risus commodo
-                    viverra maecenas.
+                    We specialize in building custom websites and mobile apps
+                    that deliver results. From strategy and design to
+                    development and deployment, our end-to-end services are
+                    tailored to meet your business needs — with a focus on
+                    performance, usability, and long-term scalability
                 </p>
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-services-item">
                     <div class="icon">
@@ -308,6 +303,33 @@
                         <a href="#" class="read-more-btn"
                             >Read More <i class="flaticon-add-1"></i
                         ></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div
+                class="col-lg-3 col-md-6 col-sm-6"
+                *ngFor="let service of services"
+            >
+                <div class="single-services-item">
+                    <div class="icon">
+                        <i class="{{ service.icon }}"></i>
+                        <img src="assets/img/shape-color.png" alt="shape" />
+                    </div>
+                    <h3>
+                        <a href="#">{{ service.title }}</a>
+                    </h3>
+                    <div class="content">
+                        <h3>
+                            <a href="#">{{ service.title }}</a>
+                        </h3>
+                        <p>
+                            <strong>{{ service.short }}</strong>
+                        </p>
+                        <a href="#" class="read-more-btn">
+                            Read More <i class="flaticon-add-1"></i>
+                        </a>
                     </div>
                 </div>
             </div>
