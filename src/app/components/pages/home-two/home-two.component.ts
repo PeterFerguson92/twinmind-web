@@ -10,6 +10,7 @@ export class HomeTwoComponent implements OnInit {
     services: any[] = [];
     whyChooseUsInformation: any;
     recentProjects: any[] = [];
+
     constructor(private commonService: CommonService) {}
 
     ngOnInit(): void {
