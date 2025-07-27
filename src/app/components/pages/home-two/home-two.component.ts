@@ -14,9 +14,7 @@ export class HomeTwoComponent implements OnInit {
     constructor(private commonService: CommonService) {}
 
     ngOnInit(): void {
-        this.services = this.commonService.getAllServices();
-        this.whyChooseUsInformation =
-            this.commonService.getWhyChooseUsInformation();
+       
         this.recentProjects = this.commonService.getRecentProjects();
     }
 }
