@@ -1,26 +1,6 @@
 <!-- Start Footer Area -->
 <footer class="footer-area">
     <div class="container">
-        <!-- <div *ngIf="location === '/'" class="subscribe-area">
-            <h3>Subscribe To Our Newsletter</h3>
-
-            <form class="newsletter-form">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
-                    </div>
-
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                        <input type="email" class="form-control" placeholder="Your Email" name="EMAIL" required autocomplete="off">
-                    </div>
-
-                    <div class="col-lg-3 col-md-12 col-sm-12">
-                        <button type="submit">Subscribe Now <i class="flaticon-paper-plane"></i></button>
-                    </div>
-                </div>
-            </form>
-        </div> -->
-
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
@@ -43,11 +23,11 @@
                     <h3>Services</h3>
 
                     <ul class="footer-services-list">
-                        <li><a routerLink="/">Product Engineering</a></li>
-                        <li><a routerLink="/">UX/UI Design</a></li>
-                        <li><a routerLink="/">Big Data Analysis</a></li>
-                        <li><a routerLink="/">Desktop Applications</a></li>
-                        <li><a routerLink="/">Mobile Applications</a></li>
+                        <li><a [routerLink]="['/service-details', 1]">Web Development</a></li>
+                        <li><a [routerLink]="['/service-details', 2]">Product Engineering</a></li>
+                        <li><a [routerLink]="['/service-details', 4]">Governance & Compliance</a></li>
+                        <li><a [routerLink]="['/service-details', 5]">Desktop Applications</a></li>
+                        <li><a [routerLink]="['/service-details', 6]">Mobile Applications</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,11 +37,11 @@
                     <h3>Quick Links</h3>
 
                     <ul class="quick-links-list">
-                        <li><a routerLink="/">About Us</a></li>
-                        <li><a routerLink="/">Blog</a></li>
-                        <li><a routerLink="/">Contact</a></li>
-                        <li><a routerLink="/">Support</a></li>
-                        <li><a routerLink="/">Applications</a></li>
+                        <li><a routerLink="/about">About Us</a></li>
+                        <li><a routerLink="/services">Services</a></li>
+                        <li><a routerLink="/projects">Projects</a></li>
+                        <li><a routerLink="/faq">FAQ</a></li>
+                        <li><a routerLink="/contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +65,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <p>&copy; Copyright {{currentYear}} <a routerLink="/">Crimo</a>. All Rights Reserved.</p>
+                    <p>&copy; Copyright {{currentYear}} <a routerLink="/">TwinMind Solutions</a>. All Rights Reserved.</p>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-6">

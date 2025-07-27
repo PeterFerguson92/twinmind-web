@@ -56,6 +56,7 @@ export const SERVICES = [
             },
         ],
     },
+
     {
         id: 2,
         title: "Product Engineering",
@@ -111,27 +112,27 @@ export const SERVICES = [
     },
     {
         id: 4,
-        title: "Cyber Security",
-        subtitle: "Protect your business from threats",
-        icon: "flaticon-cyber-security",
-        short: "Secure your digital assets against threats and breaches.",
-        long: "We provide comprehensive cybersecurity services to protect your applications, data, and infrastructure. Our offerings include penetration testing, secure coding practices, threat modeling, endpoint protection, cloud security, and compliance consulting. We help mitigate risk, prevent breaches, and build trust with your users and stakeholders.",
+        title: "Governance & Compliance",
+        subtitle: "Streamline legal operations and ensure accountability",
+        icon: "flaticon-launch", // Ensure the icon class exists or replace accordingly
+        short: "Empower your business with tech solutions that simplify compliance and governance.",
+        long: "Our Governance & Compliance services deliver tailored solutions to help businesses meet regulatory obligations and implement robust internal policies. From contract lifecycle management to compliance tracking and audit readiness, we provide tools that align with GDPR, HIPAA, SOX, and other global standards. Our platforms improve legal clarity, reduce risk, and foster organizational accountability.",
         faqDescription: {
-            short: "Your security questions, answered.",
-            long: "Security is serious business. This FAQ covers topics like how we conduct security audits, protect against breaches, maintain compliance, and secure cloud environments. If you’re concerned about data integrity or regulatory standards, you’ll find the answers here.",
+            short: "Navigate compliance with ease.",
+            long: "This FAQ answers your key questions around how our digital governance tools help with policy enforcement, regulatory reporting, contract automation, and compliance monitoring. Whether you’re a startup or an enterprise, we help you build trust through compliance.",
         },
         faqs: [
             {
-                question: "Do you offer penetration testing?",
-                answer: "Yes, including manual and automated vulnerability assessments.",
+                question: "Can you automate governance workflows?",
+                answer: "Yes, we design tools that manage policy approvals, task assignments, and compliance tracking with full transparency.",
             },
             {
-                question: "Can you help with data protection compliance?",
-                answer: "We support GDPR, HIPAA, and other standards.",
+                question: "Do you help with data privacy regulations?",
+                answer: "We support full compliance with regulations like GDPR, HIPAA, and other jurisdictional standards.",
             },
             {
-                question: "How do you secure cloud applications?",
-                answer: "Using best practices including encryption, RBAC, MFA, and monitoring.",
+                question: "What types of audits can your system support?",
+                answer: "Our solutions help you prepare for internal, external, and third-party audits by offering traceable logs and documentation workflows.",
             },
         ],
     },
@@ -257,6 +258,40 @@ export const RECENT_PROJECTS = [
     },
     {
         id: 2,
+        name: "Daniel K. Ansah",
+        businessType: "Religion & Spirituality",
+        screenshots: [
+            "assets/img/project-img/dansah/daniel1.png",
+            "assets/img/project-img/dansah/daniel2.png",
+            "assets/img/project-img/dansah/daniel3.png",
+        ],
+        link: "https://danielkansah.org/home",
+        client: "Daniel K. Ansah",
+        featured: true,
+        shortDescription:
+            "A personal brand website for Pastor Daniel Kansah, built to showcase his sermons, ministry vision, leadership work, and mentorship outreach in a clean, responsive format.",
+        description:
+            "The platform serves as a digital hub for his ministry—featuring sermons, speaking engagements, leadership development resources, and a blog for inspirational teachings. The site highlights Daniel's personal story and his mission to help individuals grow in faith and purpose. Built with user experience in mind, it includes easy navigation, mobile optimization, and an intuitive CMS for content updates. This project demonstrates full-stack implementation for a personal brand rooted in impact and outreach.. Driven by this goal, we created our own solar wall light lamp that offers a practical and efficient solution for nighttime safety. Designed with convenience and reliability in mind, our solar lights automatically charge during the day and illuminate pathways, doorways, and gardens at night without requiring any wiring or electricity. Whether you're looking to deter unwanted visitors or simply want better visibility around your home, TwoVisible's lighting solution provides peace of mind with minimal effort. It's an easy-to-install, energy-saving addition to any home that puts safety first.",
+    },
+    {
+        id: 3,
+        name: "2 Visible",
+        businessType: "Home Security & Outdoor Lighting",
+        screenshots: [
+            "assets/img/project-img/twovisible/twovisible1.png",
+            "assets/img/project-img/twovisible/twovisible2.png",
+            "assets/img/project-img/twovisible/twovisible3.png",
+        ],
+        link: "https://two-visible-qa.firebaseapp.com/home",
+        client: "2Visible",
+        featured: true,
+        shortDescription:
+            "TwoVisible is dedicated to helping people feel safer at home, especially at night. We developed a hassle-free solar wall light lamp that enhances security and visibility outdoors without the need for wiring or electricity.",
+        description:
+            "At TwoVisible, our mission is simple—help people feel secure in their own homes, especially after dark. Driven by this goal, we created our own solar wall light lamp that offers a practical and efficient solution for nighttime safety. Designed with convenience and reliability in mind, our solar lights automatically charge during the day and illuminate pathways, doorways, and gardens at night without requiring any wiring or electricity. Whether you're looking to deter unwanted visitors or simply want better visibility around your home, TwoVisible's lighting solution provides peace of mind with minimal effort. It's an easy-to-install, energy-saving addition to any home that puts safety first.",
+    },
+    {
+        id: 4,
         name: "Seko City Logistics",
         businessType: "Logistics & Shipping",
         screenshots: [
@@ -273,7 +308,7 @@ export const RECENT_PROJECTS = [
             "is a trusted logistics company specializing in door-to-door delivery services from the UK to Ghana. Whether you're sending personal packages, household items, or commercial freight, Seko City ensures your goods are collected, shipped, cleared through customs, and delivered directly to your recipient’s doorstep in Ghana. With transparent pricing, professional customer service, and a focus on reliability, they simplify cross-border shipping for individuals, families, and businesses. Seko City’s mission is to make international delivery feel as easy as local transport — secure, efficient, and stress-free",
     },
     {
-        id: 3,
+        id: 5,
         name: "Seko Admin Application",
         businessType: "Logistics & Shipping",
         screenshots: [
@@ -290,7 +325,7 @@ export const RECENT_PROJECTS = [
             "The Admin Application is a centralized logistics management system purpose-built for Seko City's operations team. It enables staff to efficiently handle customer bookings, track active and past orders, and manage user profiles within the delivery pipeline. With intuitive dashboards and role-based access, the platform ensures secure, real-time visibility across shipping statuses, payment confirmations, and dispatch logs. Designed to support the logistical demands of international shipping—particularly between the UK and Ghana—the admin panel plays a critical role in enhancing operational accuracy, customer service, and business scalability.",
     },
     {
-        id: 4,
+        id: 6,
         name: "Seko Driver Mobile App",
         businessType: "Logistics & Shipping",
         screenshots: [
@@ -307,20 +342,54 @@ export const RECENT_PROJECTS = [
             "The Seko Driver Mobile Application is designed specifically for drivers working with Seko City's logistics network. It streamlines the item pickup process by providing drivers with live access to their assigned tasks, customer contact details, pickup addresses, and delivery routes. The app includes features like live status updates, photo capture for proof of collection, digital signatures, and navigation integration. By connecting seamlessly with the Seko Admin system, the driver app ensures transparency, efficiency, and accountability at every stage of the delivery lifecycle—from the customer's door in the UK to final processing for shipment to Ghana.",
     },
     {
-        id: 5,
-        name: "2 Visible",
-        businessType: "Home Security & Outdoor Lighting",
+        id: 7,
+        name: "Jacob weds Vivian",
+        businessType: "Wedding & Event Planning",
         screenshots: [
-            "assets/img/project-img/twovisible/twovisible1.png",
-            "assets/img/project-img/twovisible/twovisible2.png",
-            "assets/img/project-img/twovisible/twovisible3.png",
+            "assets/img/project-img/jacvivian/jacviv1.png",
+            "assets/img/project-img/jacvivian/jacviv2.png",
+            "assets/img/project-img/jacvivian/jacviv3.png",
         ],
-        link: "https://two-visible-qa.firebaseapp.com/home",
-        client: "2Visible",
-        featured: true,
+        link: "https://jacobwedsvivian.com/",
+        client: "Jacob & Vivian",
+        featured: false,
         shortDescription:
-            "TwoVisible is dedicated to helping people feel safer at home, especially at night. We developed a hassle-free solar wall light lamp that enhances security and visibility outdoors without the need for wiring or electricity.",
+            "A beautifully designed wedding website for Jacob and Vivian, providing guests with event details, RSVP functionality, and a glimpse into their love story.",
         description:
-            "At TwoVisible, our mission is simple—help people feel secure in their own homes, especially after dark. Driven by this goal, we created our own solar wall light lamp that offers a practical and efficient solution for nighttime safety. Designed with convenience and reliability in mind, our solar lights automatically charge during the day and illuminate pathways, doorways, and gardens at night without requiring any wiring or electricity. Whether you're looking to deter unwanted visitors or simply want better visibility around your home, TwoVisible's lighting solution provides peace of mind with minimal effort. It's an easy-to-install, energy-saving addition to any home that puts safety first.",
+            "This project is a custom wedding website built for Jacob and Vivian to celebrate and share their special day with loved ones. The site includes a romantic and elegant design, featuring the couple’s story, event schedule, location details, RSVP form, gallery, and guest information. Mobile-responsive and user-friendly, the site ensures guests have everything they need at their fingertips. It also includes subtle animations and soft colors to match the wedding theme, making it a memorable digital companion to their real-life celebration. Built with modern front-end technologies, this project highlights design sensitivity and attention to detail for personal milestone events.",
+    },
+    {
+        id: 8,
+        name: "Potter's community Network",
+        businessType: "Religion & Spirituality",
+        screenshots: [
+            "assets/img/project-img/pcn/pcn1.png",
+            "assets/img/project-img/pcn/pcn2.png",
+            "assets/img/project-img/pcn/pcn3.png",
+        ],
+        link: "https://pcn-web-63595.firebaseapp.com/",
+        client: "Potter's community Network (PCN",
+        featured: false,
+        shortDescription:
+            "A modern, responsive website built for PCN, a growing Christian ministry with a digital-first approach and physical presence in Bradford and Milton Keynes.",
+        description:
+            "The site was crafted with user engagement in mind, highlighting upcoming events, media content, and ministry resources. It also reflects the organization's dual nature: a strong online presence complemented by a local branch in Bradford and a prayer club in Milton Keynes.",
+    },
+    {
+        id: 9,
+        name: "Finally Fergusons",
+        businessType: "Wedding & Event Planning",
+        screenshots: [
+            "assets/img/project-img/fergie/fergie1.png",
+            "assets/img/project-img/fergie/fergie2.png",
+            "assets/img/project-img/fergie/fergie3.png",
+        ],
+        link: "https://finallyfergusons.com/",
+        client: "Peter & Millie",
+        featured: false,
+        shortDescription:
+            "A beautifully designed wedding website crafted for the Ferguson couple to celebrate their journey, share event details, and gather RSVPs — combining elegance, personalization, and modern web functionality",
+        description:
+            "FinallyFergusons.com is a fully responsive, elegant wedding website built to commemorate the marriage of the Ferguson couple. This project was designed as a one-stop digital destination for guests to learn about the couple’s story, stay informed about the wedding schedule, and conveniently RSVP.",
     },
 ];
