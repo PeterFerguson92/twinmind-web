@@ -367,8 +367,8 @@ export const RECENT_PROJECTS = [
             "assets/img/project-img/pcn/pcn2.png",
             "assets/img/project-img/pcn/pcn3.png",
         ],
-        link: "https://pcn-web-63595.firebaseapp.com/",
-        client: "Potter's community Network (PCN",
+        link: "https://potterscommunitynetwork.com/",
+        client: "Potter's community Network (PCN)",
         featured: false,
         shortDescription:
             "A modern, responsive website built for PCN, a growing Christian ministry with a digital-first approach and physical presence in Bradford and Milton Keynes.",
