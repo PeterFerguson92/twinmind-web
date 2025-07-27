@@ -87,7 +87,7 @@
                         </ul>
                     </div> -->
 
-                    <div class="single-info-box">
+                    <div *ngIf="project.link" class="single-info-box">
                         <a
                             [href]="project.link"
                             class="btn btn-primary"
