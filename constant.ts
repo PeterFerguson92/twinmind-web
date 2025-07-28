@@ -375,21 +375,21 @@ export const RECENT_PROJECTS = [
         description:
             "The site was crafted with user engagement in mind, highlighting upcoming events, media content, and ministry resources. It also reflects the organization's dual nature: a strong online presence complemented by a local branch in Bradford and a prayer club in Milton Keynes.",
     },
-    {
-        id: 9,
-        name: "Finally Fergusons",
-        businessType: "Wedding & Event Planning",
-        screenshots: [
-            "assets/img/project-img/fergie/fergie1.png",
-            "assets/img/project-img/fergie/fergie2.png",
-            "assets/img/project-img/fergie/fergie3.png",
-        ],
-        link: "https://finallyfergusons.com/",
-        client: "Peter & Millie",
-        featured: false,
-        shortDescription:
-            "A beautifully designed wedding website crafted for the Ferguson couple to celebrate their journey, share event details, and gather RSVPs — combining elegance, personalization, and modern web functionality",
-        description:
-            "FinallyFergusons.com is a fully responsive, elegant wedding website built to commemorate the marriage of the Ferguson couple. This project was designed as a one-stop digital destination for guests to learn about the couple’s story, stay informed about the wedding schedule, and conveniently RSVP.",
-    },
+    // {
+    //     id: 9,
+    //     name: "Finally Fergusons",
+    //     businessType: "Wedding & Event Planning",
+    //     screenshots: [
+    //         "assets/img/project-img/fergie/fergie1.png",
+    //         "assets/img/project-img/fergie/fergie2.png",
+    //         "assets/img/project-img/fergie/fergie3.png",
+    //     ],
+    //     link: "https://finallyfergusons.com/",
+    //     client: "Peter & Millie",
+    //     featured: false,
+    //     shortDescription:
+    //         "A beautifully designed wedding website crafted for the Ferguson couple to celebrate their journey, share event details, and gather RSVPs — combining elegance, personalization, and modern web functionality",
+    //     description:
+    //         "FinallyFergusons.com is a fully responsive, elegant wedding website built to commemorate the marriage of the Ferguson couple. This project was designed as a one-stop digital destination for guests to learn about the couple’s story, stay informed about the wedding schedule, and conveniently RSVP.",
+    // },
 ];
