@@ -276,39 +276,14 @@
         </div>
 
         <div class="feedback-slides owl-carousel owl-theme">
-            <div class="single-feedback-box">
-                <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour predefined words which don't look.
-                </p>
+            <div
+                class="single-feedback-box"
+                *ngFor="let feedback of feedbackList"
+            >
+                <p>{{ feedback.message }}</p>
                 <div class="client-info">
-                    <h3>Filip Luis</h3>
-                    <span>Founder & CEO</span>
-                </div>
-            </div>
-
-            <div class="single-feedback-box">
-                <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour predefined words which don't look.
-                </p>
-                <div class="client-info">
-                    <h3>Steven Smith</h3>
-                    <span>CEO</span>
-                </div>
-            </div>
-
-            <div class="single-feedback-box">
-                <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour predefined words which don't look.
-                </p>
-                <div class="client-info">
-                    <h3>Sarah Taylor</h3>
-                    <span>EnvyTheme</span>
+                    <h3>{{ feedback.name }}</h3>
+                    <span>{{ feedback.title }}</span>
                 </div>
             </div>
         </div>
