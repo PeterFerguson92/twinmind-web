@@ -59,7 +59,7 @@ export const RECENT_PROJECTS = [
             "assets/img/project-img/mtag-web/mtag-web2.png",
             "assets/img/project-img/mtag-web/mtag-web3.png",
         ],
-        link: null,
+        link: "https://mtag.org.uk/",
         client: "Miracle Temple (MTAG)",
         featured: false,
         shortDescription:
