@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { RECENT_PROJECTS } from "constant";
 import { FEEDBACK_LIST } from "src/constant-files/feedback-constant";
+import { RECENT_PROJECTS } from "src/constant-files/project-contants";
 import { SERVICES } from "src/constant-files/services-constant";
 import { WHY_CHOOSE_US } from "src/constant-files/whychoose-costant";
 
