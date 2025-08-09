@@ -6,7 +6,7 @@ export const WHY_CHOOSE_US = {
     reasons: [
         {
             title: "Industry Expertise",
-            image: "assets/img/why-choose-us/why-choose-us4.jpg",
+            image: "assets/img/downloaded/img16.jpg",
             description:
                 "With years of domain experience, our team understands the nuances of your industry to deliver practical and scalable solutions.",
             link: "#",
